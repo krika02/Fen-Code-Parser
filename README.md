@@ -1,4 +1,4 @@
-# Fern-Codes
+# FEN-Codes
 A simple fen code parser made with React and Redux.<br>
 Live demo can be found <a href="http://output.jsbin.com/vaxeyeq" target="_blanc">here</a>
 
