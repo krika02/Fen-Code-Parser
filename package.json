@@ -1,7 +1,7 @@
 {
   "name": "Fern-Codes",
   "version": "1.0.0",
-  "description": "A simple fen code parser made with React and Redux",
+  "description": "A simple fen code parser made with React and Redux", 
   "main": "src/main.jsx",
   "repository": "https://github.com/krika02/Fern-Codes.git",
   "author": "Kristoffer Karlsson hello@kristofferkarlsson.me",

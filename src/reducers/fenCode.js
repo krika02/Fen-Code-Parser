@@ -112,14 +112,14 @@ module.exports = (state = {}, action) => {
 			const fcFullMoveNumber = splittedFenCode[5];
 
 			// Parse field
-      // Split rows
+			// Split rows
 
 			const rows = fcField.split('/');
 			if (rows.length !== boardConstants.ROW_LENGTH) {
 				return notValid(`There should be ${boardConstants.ROW_LENGTH} rows in the field, got ${rows.length}`);
 			}
 
-      // Parse each row
+			// Parse each row
 
 			for (let y = 0; y < boardConstants.ROW_LENGTH; y += 1) {
 				if (rows[y].length > boardConstants.ROW_LENGTH) {
