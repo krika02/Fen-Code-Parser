@@ -4,13 +4,9 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import App from './components/App/App';
 import reducer from './reducers';
+import fenCodeConstants from './constants/fenCode';
 
-const store = createStore(reducer, {
-	fenCode: {
-		valid: true,
-		field: [[]],
-	},
-});
+const store = createStore(reducer, { fenCode: fenCodeConstants.INITIAL_STATE });
 
 render(
 	<Provider store={store}>

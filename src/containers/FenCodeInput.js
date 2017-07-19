@@ -2,7 +2,8 @@ import { connect } from 'react-redux';
 import fenCodeActions from '../actions/fenCode';
 import FenCodeInputComponent from '../components/FenCodeInput/FenCodeInput';
 
-const mapStateToProps = state => ({ valid: state.fenCode.valid });
+const mapStateToProps = state =>
+	({ error: state.fenCode.error, errorMessage: state.fenCode.errorMessage });
 
 const mapDispatchToProps = dispatch => ({
 	parseFernCode: (fenCode) => {

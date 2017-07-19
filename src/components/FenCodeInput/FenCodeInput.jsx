@@ -13,18 +13,18 @@ class FenCodeInput extends React.Component {
 		this.props.parseFernCode(this.input.value);
 	}
 
-	bindInput = (input) => {
+	updateInput = (input) => {
 		this.input = input;
 	}
 
 	render() {
 		return (
 			<div>
-				{!this.props.valid &&
-					<p>Code not valid</p>
+				{this.props.error &&
+					<p>{this.props.errorMessage}</p>
 				}
 				<form onSubmit={this.handleSubmit}>
-					<input required type="text" ref={input => this.bindInput(input)} placeholder="Fen Code" />
+					<input required type="text" ref={input => this.updateInput(input)} placeholder="Fen Code" />
 					<input type="submit" value="Submit" />
 				</form>
 			</div>
@@ -33,7 +33,8 @@ class FenCodeInput extends React.Component {
 }
 
 FenCodeInput.propTypes = {
-	valid: PropTypes.bool.isRequired,
+	error: PropTypes.bool.isRequired,
+	errorMessage: PropTypes.string.isRequired,
 	parseFernCode: PropTypes.func.isRequired,
 };
 
