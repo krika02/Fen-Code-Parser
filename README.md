@@ -7,8 +7,8 @@ The Forsyth-Edwards Notation (FEN for short), is the standard notation or method
 Read more about it <a href="http://www.chess-poster.com/english/learn_chess/notation/notation.htm#fen" target="_blanc">here</a>.
 
 Some example codes :<br>
-rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
-rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq e3 0 1
+rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1<br>
+rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq e3 0 1<br>
 rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq c6 0 2
 
 ## Start
