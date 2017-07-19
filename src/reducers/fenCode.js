@@ -80,7 +80,7 @@ const parseCastling = (fcCastling) => {
 
 const isDigit = c => /^\d$/.test(c);
 const notValid = (errorMessage = 'Code not valid') => Object.assign({}, fenCodeConstants.INITIAL_STATE, {
-	valid: false,
+	error: true,
 	errorMessage,
 });
 
@@ -116,14 +116,14 @@ module.exports = (state = {}, action) => {
 
 			const rows = fcField.split('/');
 			if (rows.length !== boardConstants.ROW_LENGTH) {
-				return notValid(`There should be ${boardConstants.ROW_LENGTH} rows, got ${rows.length}`);
+				return notValid(`There should be ${boardConstants.ROW_LENGTH} rows in the field, got ${rows.length}`);
 			}
 
       // Parse each row
 
 			for (let y = 0; y < boardConstants.ROW_LENGTH; y += 1) {
 				if (rows[y].length > boardConstants.ROW_LENGTH) {
-					return notValid(`Section ${y} is too long`);
+					return notValid(`Field row ${(y + 1)} is too long`);
 				}
 				field[y] = [];
 				for (let x = 0; x < boardConstants.ROW_LENGTH; x += 1) {
@@ -147,7 +147,7 @@ module.exports = (state = {}, action) => {
 				}
 
 				if (field[y].length !== boardConstants.ROW_LENGTH) {
-					return notValid(`Section ${y} is not ${boardConstants.ROW_LENGTH} long`);
+					return notValid(`Field row ${(y + 1)} does not specify ${boardConstants.ROW_LENGTH} fields`);
 				}
 			}
 
