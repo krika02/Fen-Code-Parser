@@ -1,8 +1,6 @@
 # Fern-Codes
 A simple fen code parser made with React and Redux.
-
-## Live demo
-http://output.jsbin.com/vaxeyeq
+Live demo can be found <a href="http://output.jsbin.com/vaxeyeq" target="_blanc">here</a>
 
 ## What is fen codes?
 The Forsyth-Edwards Notation (FEN for short), is the standard notation or method for describing Chess positions or a particular board position of a Chess game.
