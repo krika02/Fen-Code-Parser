@@ -15,8 +15,8 @@ rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq c6 0 2
 Install `yarn`, read how [here](https://yarnpkg.com/en/docs/install).
 
 1. cd to same folder as package.json
-2. yarn install
-3. yarn build or yarn build-prod
+2. 'yarn install'
+3. 'yarn build' (dev) or 'yarn build-prod' or 'yarn build-prod-windows'
 
 To start the application you can now run: `yarn start`
 
