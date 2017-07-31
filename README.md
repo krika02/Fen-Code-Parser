@@ -22,3 +22,4 @@ To start the application you can now run: `yarn start`
 
 ## Test
 To run tests: yarn test
+
